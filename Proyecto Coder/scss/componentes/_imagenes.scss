@@ -1,0 +1,39 @@
+@mixin flexbox ($display, $jc) {
+    display: $display;
+    justify-content: $jc;
+}
+
+.carousel{
+    z-index: -1;
+}
+
+.img{
+    border-radius: 20px;
+    border: 15px solid rgb(119, 190, 131);
+    margin: 10px 40px;
+}
+
+.imglink:hover {
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+.imgpr-container {
+    @include flexbox(flex, center);
+    padding: 20px 5px;
+
+    .imgpr {
+        width: 80%;
+        @include flexbox(flex, space-around);
+        flex-wrap: wrap;
+     }
+}
+
+.btncarrito {
+    @include flexbox(flex, center);
+    padding: 10px 0px;
+    color: white;
+    background-color: rgb(119, 190, 131);
+    border-radius: 5px;
+    margin: 0px 40px;
+}

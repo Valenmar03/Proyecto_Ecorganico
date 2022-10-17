@@ -1,0 +1,30 @@
+.fomrulario {
+    display: flex;
+    justify-content: space-around;
+}
+.form-container {
+    padding: 15px;
+    margin: 50px 30%;
+    width: 35%;
+    background-color: rgb(178, 231, 187);
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.form-title {
+    margin: 10px; 
+}
+
+.input {
+    width: 80%;
+    padding: 5px;
+    margin: 9px 1px;
+}
+
+.submit {
+    width: 40%;
+    align-items: center;
+    padding: 7px;
+    margin: 5px 27%;
+    border-radius: 5px;
+}

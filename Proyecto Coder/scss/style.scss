@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+@import 'base/typography';
+@import 'base/header';
+@import 'base/footer';
+@import 'componentes/imagenes';
+@import 'base/productos';
+@import 'base/nosotros';
+@import 'componentes/detalles';
+@import 'base/carrito';
+@import 'base/formulario'

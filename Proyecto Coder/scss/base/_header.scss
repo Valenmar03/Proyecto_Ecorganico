@@ -1,0 +1,31 @@
+@mixin flexbox ($display, $jc) {
+    display: $display;
+    justify-content: $jc;
+}
+
+.header-container {
+    background-color: rgb(178, 231, 187);
+    @include flexbox(flex, center);
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    z-index: 1;
+
+    .header {
+        width: 95%;
+        @include flexbox(flex, space-between);
+        align-items: center;
+
+        .navbar {
+            padding: 0px 20px;
+            font-family: Roboto;
+            font-size: 20px;
+            color: black;
+            background-color: rgb(178, 231, 187);
+
+            .dropdown-menu {
+                background-color: rgb(178, 231, 187);
+            }
+        }
+    }
+}
